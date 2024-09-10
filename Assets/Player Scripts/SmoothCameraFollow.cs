@@ -14,8 +14,9 @@ public class SmoothCameraFollow : MonoBehaviour
         Vector3 desiredPosition = target.position + offset;
         // Z 축을 -10으로 고정
         desiredPosition.z = -10f;
-     
-    
+
+        desiredPosition.y = Mathf.Max(desiredPosition.y, 0.37f);
+
 
         // 부드러운 이동 처리
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
