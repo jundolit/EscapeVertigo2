@@ -17,7 +17,7 @@ public class PlayerMove : MonoBehaviour
     public float staminaRegenRate = 5f; // 스태미너 회복 속도 (초당)
     private bool isRunning = false; // 현재 달리고 있는지 여부
     public Slider staminaBar; // 유니티 에디터에서 연결할 슬라이더
-    public Vector3 staminaBarOffset = new Vector3(0, 3f, 0); // 플레이어 머리 위 오프셋
+    public Vector3 staminaBarOffset = new Vector3(0, 10f, 0); // 플레이어 머리 위 오프셋
     public float staminaRecoveryCooldown = 10f; // 스태미너 회복 지연 시간 (초)
     private float staminaRecoveryTimer = 0f; // 현재 회복 지연 타이머
 
