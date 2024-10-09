@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 33e60271691e3064bb3e13ed8c7f74c8
+=======
+<<<<<<<< HEAD:Assets/Characters/Monster_walk.gif.meta
+guid: 8a53045492e741a4e98b27f038f8a8e3
+========
+guid: e306b4beb430b44489baf6c421c38410
+>>>>>>>> 74a6cf65a65405ebbdca9440acd7afda7ee547ad:Assets/Characters/MosterAttack_pixel.gif.meta
+>>>>>>> 74a6cf65a65405ebbdca9440acd7afda7ee547ad
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
