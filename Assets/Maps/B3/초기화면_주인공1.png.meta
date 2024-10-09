@@ -1,13 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Maps/B3/초기화면_주인공1.png.meta
-guid: b6cba7a2e8e75b149a5570666be4cc3b
-========
-guid: 3ec3e6bf3d899e048b7d6478972da08e
->>>>>>>> 74a6cf65a65405ebbdca9440acd7afda7ee547ad:Assets/Characters/간수_숨쉬기.gif.meta
-=======
 guid: 78fd0d51117a1a74fa408376579d052e
->>>>>>> 74a6cf65a65405ebbdca9440acd7afda7ee547ad
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,11 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-<<<<<<< HEAD
-    wrapW: 1
-=======
     wrapW: 0
->>>>>>> 74a6cf65a65405ebbdca9440acd7afda7ee547ad
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -75,26 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-<<<<<<< HEAD
-  applyGammaDecoding: 0
-  swizzle: 50462976
-  cookieLightType: 0
-=======
   applyGammaDecoding: 1
   swizzle: 50462976
   cookieLightType: 2
->>>>>>> 74a6cf65a65405ebbdca9440acd7afda7ee547ad
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< HEAD
-    textureCompression: 1
-=======
     textureCompression: 0
->>>>>>> 74a6cf65a65405ebbdca9440acd7afda7ee547ad
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,9 +85,6 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< HEAD
-    textureCompression: 1
-=======
     textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
@@ -124,7 +99,6 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
->>>>>>> 74a6cf65a65405ebbdca9440acd7afda7ee547ad
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0

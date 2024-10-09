@@ -1,17 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Characters/간수_숨쉬기.gif.meta
 guid: ba47745888e8dae4c940d6d017e13775
-========
-guid: 9dae20bf5f98c574195ccd6a5ae48970
->>>>>>>> 3f744f0846fc1770efb5c44d041f013c6a3a550e:Assets/Characters/안나_숨쉬기.gif.meta
-=======
-<<<<<<<< HEAD:Assets/Maps/B3/초기화면_주인공1.png.meta
-guid: b6cba7a2e8e75b149a5570666be4cc3b
-========
-guid: 3ec3e6bf3d899e048b7d6478972da08e
->>>>>>>> 74a6cf65a65405ebbdca9440acd7afda7ee547ad:Assets/Characters/간수_숨쉬기.gif.meta
->>>>>>> 3f744f0846fc1770efb5c44d041f013c6a3a550e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -98,49 +86,6 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Characters/간수_숨쉬기.gif.meta
-========
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: VisionOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
->>>>>>>> 3f744f0846fc1770efb5c44d041f013c6a3a550e:Assets/Characters/안나_숨쉬기.gif.meta
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -154,37 +99,6 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
-<<<<<<<< HEAD:Assets/Characters/간수_숨쉬기.gif.meta
-========
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: tvOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
->>>>>>>> 3f744f0846fc1770efb5c44d041f013c6a3a550e:Assets/Characters/안나_숨쉬기.gif.meta
-=======
->>>>>>> 3f744f0846fc1770efb5c44d041f013c6a3a550e
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
