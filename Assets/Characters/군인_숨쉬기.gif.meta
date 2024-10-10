@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/Maps/B3/초기화면_주인공2.png.meta
+guid: b83d3eab6381ab646b72a6571ee21813
+========
+guid: d874d6be3aefd5148b367ba0c62c73b4
+>>>>>>>> 74a6cf65a65405ebbdca9440acd7afda7ee547ad:Assets/Characters/군인_숨쉬기.gif.meta
+=======
 guid: e3e413aaae94afa4d8e69f0d042e28ee
+>>>>>>> 73ec07ab1b0a218f8281d97d3a72a3c324e94b13
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
