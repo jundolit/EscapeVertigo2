@@ -788,7 +788,6 @@ GameObject:
   - component: {fileID: 515109376}
   - component: {fileID: 515109375}
   - component: {fileID: 515109377}
-  - component: {fileID: 515109378}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -971,20 +970,6 @@ MonoBehaviour:
   staminaBar: {fileID: 279624861}
   staminaBarOffset: {x: 0, y: 1.5, z: 0}
   staminaRecoveryCooldown: 10
---- !u!114 &515109378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 515109371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6808e18cf9d222d429d7770c185274a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventoryUI: {fileID: 0}
-  inventorySize: 10
 --- !u!1 &548224336
 GameObject:
   m_ObjectHideFlags: 0
