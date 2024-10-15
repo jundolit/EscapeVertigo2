@@ -43,7 +43,13 @@ public class SoldierMove : MonoBehaviour
         // Soldier가 플레이어와 충돌했을 때
         if (collision.gameObject.CompareTag("Player"))
         {
+            Vector3 scale = transform.localScale;
+            scale.x = -Mathf.Abs(scale.x); // x축 방향으로 뒤집기
+            transform.localScale = scale;
+            Vector3 startPosition = transform.position;
+            Vector3 targetPosition = startPosition + new Vector3(7.0f, 0, 0); // 오른쪽으로 2 유닛 이동
             shouldMove = false; // 충돌 시 Soldier 움직임 멈춤
+     
             isMoving = false; // 이동 중지 상태로 설정
             Debug.Log("Player와 충돌!");
 
@@ -61,7 +67,7 @@ public class SoldierMove : MonoBehaviour
         // Soldier를 오른쪽으로 3초간 이동
         float elapsedTime = 0f;
         Vector3 startPosition = transform.position;
-        Vector3 targetPosition = startPosition + new Vector3(9.0f, 0, 0); // 오른쪽으로 2 유닛 이동
+        Vector3 targetPosition = startPosition + new Vector3(11.0f, 0, 0); // 오른쪽으로 2 유닛 이동
 
         while (elapsedTime < 3.0f)
         {

@@ -14,10 +14,18 @@ public class GameDirector : MonoBehaviour
     private bool isTypingStarted = false; // 대사 타이핑 시작 여부
     private bool isSoldierMoving = false; // Soldier가 이미 이동 중인지 여부
     private bool soldierisTypingStarted = false; // Soldier 대사 타이핑 시작 여부
+    private SubMenuManager subMenuManager; // SubMenuManager 참조 변수
+    private bool isSubMenuOpen = false; // 서브메뉴 열림 상태를 추적하는 플래그
 
 
     void Start()
     {
+        subMenuManager = FindObjectOfType<SubMenuManager>();
+
+        if (subMenuManager == null)
+        {
+            Debug.LogError("SubMenu 오브젝트를 찾을 수 없습니다!");
+        }
         // 컴포넌트 확인
         if (player == null)
         {
@@ -45,7 +53,23 @@ public class GameDirector : MonoBehaviour
     }
 
     void Update()
-    {
+    {  // Esc 키 입력 시 서브메뉴 열기/닫기 처리
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (subMenuManager != null)
+            {
+                if (isSubMenuOpen)
+                {
+                    subMenuManager.CloseSubMenu(); // 서브메뉴 닫기
+                    isSubMenuOpen = false; // 상태를 닫힘으로 변경
+                }
+                else
+                {
+                    subMenuManager.OpenSubMenu(); // 서브메뉴 열기
+                    isSubMenuOpen = true; // 상태를 열림으로 변경
+                }
+            }
+        }
         if (player != null && typingEffect != null && playerMove != null && soldierTypingEffect != null)
         {
             // 플레이어가 x >= 3일 때 이동 비활성화 및 솔져 이동 시작
