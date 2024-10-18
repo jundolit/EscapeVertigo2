@@ -938,6 +938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   submenu: {fileID: 2111102889}
+  player: {fileID: 515109374}
 --- !u!4 &511641859
 Transform:
   m_ObjectHideFlags: 0
@@ -1717,8 +1718,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 213.75, y: 15}
-  m_SizeDelta: {x: 92.7055, y: 53.3152}
+  m_AnchoredPosition: {x: 280.99194, y: 25.956116}
+  m_SizeDelta: {x: 94.6974, y: 64.2713}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1218318042
 MonoBehaviour:

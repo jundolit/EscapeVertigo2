@@ -6,10 +6,10 @@ public class SceneSaveManager : MonoBehaviour
     // 플레이어 위치 저장 메서드
     public void SavePlayerPosition(Vector2 position)
     {
-        if (MainSaveManager.instance != null)
+        if (MainSaveManager.Instance != null) // Instance로 수정
         {
             string sceneName = SceneManager.GetActiveScene().name; // 현재 씬 이름 가져오기
-            MainSaveManager.instance.SavePlayerData(position, sceneName); // 씬 이름과 위치를 함께 저장
+            MainSaveManager.Instance.SavePlayerData(position, sceneName); // 씬 이름과 위치를 함께 저장
             Debug.Log($"씬에서 플레이어 위치가 저장되었습니다: ({position.x}, {position.y}) in scene {sceneName}");
         }
         else

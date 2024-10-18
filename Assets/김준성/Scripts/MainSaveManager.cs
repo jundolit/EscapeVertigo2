@@ -4,14 +4,14 @@ using UnityEngine.SceneManagement;
 public class MainSaveManager : MonoBehaviour
 {
     // 싱글톤 인스턴스
-    public static MainSaveManager instance;
+    public static MainSaveManager Instance; // 'instance'를 'Instance'로 변경
 
     private void Awake()
     {
         // 싱글톤 인스턴스 설정
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
             DontDestroyOnLoad(gameObject); // 씬 전환 시 오브젝트 유지
         }
         else
@@ -40,11 +40,11 @@ public class MainSaveManager : MonoBehaviour
         // 씬 이름 불러오기
         string lastSceneName = PlayerPrefs.GetString("LastSceneName", ""); // 기본값은 빈 문자열
 
-        // 유효성 검사
-        if (position.x < -100 || position.x > 100 || position.y < -100 || position.y > 100)
+        // 유효성 검사: 위치가 비정상적이면 초기화
+        if (Mathf.Abs(position.x) > 100 || Mathf.Abs(position.y) > 100)
         {
             Debug.LogWarning("불러온 플레이어 위치가 유효하지 않습니다. 기본 위치로 초기화합니다.");
-            position = Vector2.zero; // 기본 위치
+            position = Vector2.zero; // 기본 위치로 초기화
         }
 
         Debug.Log($"불러온 메인 UI 플레이어 위치: {position} in scene {lastSceneName}");
@@ -76,5 +76,14 @@ public class MainSaveManager : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
         Debug.Log("모든 데이터가 삭제되었습니다.");
+    }
+    public void SavePlayerData(Vector2 position, string sceneName, bool hasSeenIntroEvent)
+    {
+        PlayerPrefs.SetFloat("MainPlayerPosX", position.x);
+        PlayerPrefs.SetFloat("MainPlayerPosY", position.y);
+        PlayerPrefs.SetString("LastSceneName", sceneName);
+        PlayerPrefs.SetInt("HasSeenIntroEvent", hasSeenIntroEvent ? 1 : 0); // 이벤트 상태 저장
+        PlayerPrefs.Save();
+        Debug.Log($"메인 UI 플레이어 위치가 저장되었습니다: ({position.x}, {position.y}) in scene {sceneName}");
     }
 }
