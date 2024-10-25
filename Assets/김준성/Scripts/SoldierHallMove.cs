@@ -18,6 +18,7 @@ public class SoldierHallMove : MonoBehaviour
     public AudioSource audioSource; // AudioSource 컴포넌트
     public AudioClip blinkSound; // 블링크 시 재생할 오디오 클립
     public Animator playerAnimator; // 플레이어 애니메이터
+    public int qustID;
 
     private bool isWarningTriggered = false; // 경고 이벤트 발생 여부
     private bool isTypingStarted = false; // 타이핑이 시작되었는지 확인하는 플래그
@@ -28,7 +29,16 @@ public class SoldierHallMove : MonoBehaviour
     private SpriteRenderer spriteRenderer; // Soldier의 스프라이트 렌더러
     void Start()
     {
-        // Soldier의 Rigidbody와 PlayerMove 스크립트 가져오기
+        // PlayerPrefs에서 QUSTID 값을 로드
+        qustID = PlayerPrefs.GetInt("QUSTID", 0);
+
+        // QUSTID가 2 이상이면 Soldier 비활성화 (이벤트 실행 방지)
+        if (qustID >= 2)
+        {
+            GameLoad();
+            gameObject.SetActive(false); // Soldier 오브젝트 비활성화
+            return;
+        }// Soldier의 Rigidbody와 PlayerMove 스크립트 가져오기
         soldierRigidbody = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         playerMoveScript = player.GetComponent<PlayerMove>();
@@ -50,6 +60,15 @@ public class SoldierHallMove : MonoBehaviour
             MoveSoldier();
         }
 
+        // Soldier가 x 좌표 -90에 도달했는지 확인
+        if (transform.position.x <= -110 && qustID != 2)
+        {
+            // QUSTID를 2로 업데이트
+            qustID = 2;
+            PlayerPrefs.SetInt("QUSTID", qustID);
+            PlayerPrefs.Save();
+            Debug.Log("Soldier가 -110에 도달했으므로 QUSTID가 2로 설정되었습니다.");
+        }
         // 플레이어와의 상호작용 감지
         CheckPlayerProximity();
     }
@@ -214,5 +233,15 @@ public class SoldierHallMove : MonoBehaviour
             Debug.LogError("Player의 Rigidbody2D가 할당되지 않았습니다.");
         }
     }
+    public void GameLoad()
+    {
+        if (!PlayerPrefs.HasKey("PlayerPosX")) return;
 
+        float x = PlayerPrefs.GetFloat("PlayerPosX");
+        float y = PlayerPrefs.GetFloat("PlayerPosY");
+        float z = PlayerPrefs.GetFloat("PlayerPosZ");
+
+        player.transform.position = new Vector3(x, y, z);
+        Debug.Log("불러오기 완료: 플레이어 위치 = (" + x + ", " + y + ", " + z + ")");
+    }
 }

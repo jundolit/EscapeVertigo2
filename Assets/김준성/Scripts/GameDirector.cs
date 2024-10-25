@@ -21,7 +21,7 @@ public class GameDirector : MonoBehaviour
         // QUSTID 값을 로드 (기본값은 0)
         questID = PlayerPrefs.GetInt("QUSTID", 0);
 
-        if (questID == 1)
+        if (questID >= 1)
         {
             Debug.Log("QUSTID가 1이므로 GameDirector가 실행되지 않음.");
             gameObject.SetActive(false); // GameDirector를 비활성화

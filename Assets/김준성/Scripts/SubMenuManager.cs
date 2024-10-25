@@ -83,5 +83,11 @@ public class SubMenuManager : MonoBehaviour
         // 메인 UI로 씬 전환
         SceneManager.LoadScene("메인UI");
     }
+    public void Exit()
+    {
+        Application.Quit();
+
+    }
+    public void Setting() { }
 
 }
