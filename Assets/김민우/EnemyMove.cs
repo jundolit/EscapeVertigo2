@@ -21,8 +21,7 @@ public class EnemyMove : MonoBehaviour
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
-        spriteRenderer.enabled = false;  // 처음에는 보이지 않음
-        Invoke("Think", 5);
+        Invoke("Think", 5); // 초기 행동 패턴 설정
     }
 
     void Update()
@@ -35,21 +34,18 @@ public class EnemyMove : MonoBehaviour
         if (rayHit.collider != null && rayHit.collider.CompareTag("Player"))
         {
             Debug.Log("Player detected!");
-            spriteRenderer.enabled = true;
             isChasing = true;
             hasLineOfSight = true;
         }
         else
         {
             hasLineOfSight = false;
-            if (!isChasing)
-                spriteRenderer.enabled = false;
         }
 
-        if (isChasing && hasLineOfSight && !isAttacking)//플레이어 인식하고 따라가는 코드
+        if (isChasing && hasLineOfSight && !isAttacking) // 플레이어 인식하고 따라가는 코드
         {
             Vector2 direction = directionToPlayer.normalized;
-            rigid.velocity = new Vector2(direction.x * 7, rigid.velocity.y);//플레이어 따라가는 속도 
+            rigid.velocity = new Vector2(direction.x * 7, rigid.velocity.y); // 플레이어 따라가는 속도
             anim.SetInteger("WalkSpeed", 1);
             spriteRenderer.flipX = direction.x < 0;
         }
