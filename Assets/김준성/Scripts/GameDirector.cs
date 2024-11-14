@@ -17,6 +17,8 @@ public class GameDirector : MonoBehaviour
 
     void Start()
     {
+     
+
         GameLoad();
         // QUSTID 값을 로드 (기본값은 0)
         questID = PlayerPrefs.GetInt("QUSTID", 0);

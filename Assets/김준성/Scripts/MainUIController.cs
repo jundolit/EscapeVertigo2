@@ -23,11 +23,11 @@ public class MainUIController : MonoBehaviour
         PlayerPrefs.SetFloat("PlayerPosX", 0f); // 플레이어 X 위치 초기화
         PlayerPrefs.SetFloat("PlayerPosY", 0f); // 플레이어 Y 위치 초기화
         PlayerPrefs.SetFloat("PlayerPosZ", 0f); // 플레이어 Z 위치 초기화
-        PlayerPrefs.SetString("LastScene", "개인감옥"); // 기본 씬 설정
+        PlayerPrefs.SetString("LastScene", "Intro"); // 기본 씬 설정
         PlayerPrefs.Save(); // 변경사항 저장
 
         // 개인감옥 씬으로 이동
-        SceneManager.LoadScene("개인감옥");
+        SceneManager.LoadScene("Intro");
         Debug.Log("새 게임 시작: 모든 값 초기화 후 개인감옥 씬으로 전환.");
     }
 

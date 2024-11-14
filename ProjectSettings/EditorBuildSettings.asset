@@ -12,7 +12,10 @@ EditorBuildSettings:
     path: "Assets/\uAE40\uC900\uC131/\uBA54\uC778UI.unity"
     guid: ed1f433a170b9e245ac6328c24cd02f9
   - enabled: 1
-    path: "Assets/\uAE40\uC900\uC131/\uAC1C\uC778\uAC10\uC625.unity"
+    path: "Assets/\uAE40\uC900\uC131/Intro.unity"
+    guid: 086ec160c37003a4ca1ed22594e181a9
+  - enabled: 1
+    path: "Assets/\uAE40\uC900\uC131/PersonalCell.unity"
     guid: 46803634b8d5f8f4391c2ac926ec25dc
   - enabled: 1
     path: "Assets/\uAE40\uC900\uC131/\uCD08\uAE30 \uBCF5\uB3C4.unity"
@@ -21,7 +24,7 @@ EditorBuildSettings:
     path: "Assets/\uAE40\uC900\uC131/GameOver.unity"
     guid: 41b67bcb6f53f29408e9413d01f9d3e2
   - enabled: 1
-    path: "Assets/\uAE40\uC900\uC131/\uC758\uBB34\uC2E4 \uBCF5\uB3C4.unity"
+    path: "Assets/\uAE40\uC900\uC131/MedicHall.unity"
     guid: c703c4bb0e0658c42bee7ca847d93076
   - enabled: 1
     path: "Assets/\uAE40\uC900\uC131/\uC758\uBB34\uC2E4.unity"

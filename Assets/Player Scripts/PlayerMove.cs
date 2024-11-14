@@ -10,6 +10,7 @@ public class PlayerMove : MonoBehaviour
     public float runMultiplier; // 달리기 속도 배율
     public string targetTag = "Obstacle";
     public ObjectManager objectManager; // ObjectManager 참조 추가
+    private bool lastDirectionFlipX; // 마지막 이동 방향 저장
 
     public float transitionThresholdLeft = -30f; // 왼쪽 끝 전환 임계값
     public float transitionThresholdRight = 30f; // 오른쪽 끝 전환 임계값
@@ -41,17 +42,43 @@ public class PlayerMove : MonoBehaviour
     {
         // 방향 변경 및 애니메이션 설정
         if (Input.GetButton("Horizontal"))
-            spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;
+        {
+            lastDirectionFlipX = Input.GetAxisRaw("Horizontal") == -1;
+            spriteRenderer.flipX = lastDirectionFlipX;
+        }
 
-        if (Mathf.Abs(rigid.velocity.x) > 0.01f && Mathf.Abs(rigid.velocity.x) < 20f)
+        // 걷기 애니메이션 설정
+        if (Mathf.Abs(rigid.velocity.x) > 0.01f && Mathf.Abs(rigid.velocity.x) < 5f)
+        {
+            lastDirectionFlipX = Input.GetAxisRaw("Horizontal") == 1;
+
             anim.SetBool("isWalk", true);
+        }
         else
+        {
             anim.SetBool("isWalk", false);
+        }
 
-        if (Mathf.Abs(rigid.velocity.x) >= 20f)
+        // 달리기 애니메이션 설정
+        if (Mathf.Abs(rigid.velocity.x) >= 5f)
+        {
             anim.SetBool("isRun", true);
+        }
         else
+        {
             anim.SetBool("isRun", false);
+        }
+
+        // Idle 상태로 전환할 때 마지막 이동 방향을 유지
+        if (rigid.velocity.x == 0)
+        {
+            anim.SetBool("isIdle", true);
+            spriteRenderer.flipX = lastDirectionFlipX; // 마지막 이동 방향을 Idle 상태에서 유지
+        }
+        else
+        {
+            anim.SetBool("isIdle", false);
+        }
 
         // 상호작용 키(E)를 눌렀을 때 상호작용 실행
         if (Input.GetKeyDown(KeyCode.E))
@@ -63,8 +90,6 @@ public class PlayerMove : MonoBehaviour
             }
         }
 
-        // 씬 전환 체크
-        CheckSceneTransition();
 
         // 스태미너 바 표시 및 위치 업데이트
         if (staminaBar != null)
@@ -143,71 +168,7 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-    void CheckSceneTransition()
-    {
-        string currentScene = SceneManager.GetActiveScene().name;
-        Debug.Log("Current Scene: " + currentScene);
-        Debug.Log("Player Position: " + transform.position.x);
-
-        // 왼쪽 끝에서 다음 씬으로 전환
-        if (transform.position.x <= transitionThresholdLeft)
-        {
-            switch (currentScene)
-            {
-                case "PrisonHall2 CL":
-                    Debug.Log("Transitioning to PrisonHall");
-                    SceneManager.LoadScene("PrisonHall CL");
-                    break;
-                case "PrisonHall CL":
-                    Debug.Log("Transitioning to MainHall");
-                    SceneManager.LoadScene("MainHall");
-                    break;
-                case "MainHall":
-                    Debug.Log("Transitioning to MedicalHall");
-                    SceneManager.LoadScene("MedicalHall");
-                    break;
-                case "PrisonHall2 R":
-                    Debug.Log("Transitioning to PrisonHall ");
-                    SceneManager.LoadScene("PrisonHall CL");
-                    break;
-                case "PrisonHall R":
-                    Debug.Log("Transitioning to MainHall");
-                    SceneManager.LoadScene("MainHall");
-                    break;
-                case "MainHall R":
-                    Debug.Log("Transitioning to MedicalHall");
-                    SceneManager.LoadScene("MedicalHall");
-                    break;
-            }
-        }
-        // 오른쪽 끝에서 이전 씬으로 전환
-        else if (transform.position.x >= transitionThresholdRight)
-        {
-            switch (currentScene)
-            {
-                case "MedicalHall":
-                    Debug.Log("Transitioning to MainHall");
-                    SceneManager.LoadScene("MainHall R");
-                    break;
-                case "MainHall R":
-                    Debug.Log("Transitioning to PrisonHall");
-                    SceneManager.LoadScene("PrisonHall CL 1");
-                    break;
-                case "MainHall":
-                    Debug.Log("Transitioning to PrisonHall");
-                    SceneManager.LoadScene("PrisonHall CL 1");
-                    break;
-                case "PrisonHall CL 1":
-                    Debug.Log("Transitioning to PrisonHall2");
-                    SceneManager.LoadScene("PrisonHall2 CL 1");
-                    break;
-                case "PrisonHall CL ":
-                    Debug.Log("Transitioning to PrisonHall2");
-                    SceneManager.LoadScene("Prison Hall2 CL 1");
-                    break;
-            }
-        }
-    }
+   
     void Scan()
     {
 

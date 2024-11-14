@@ -1,0 +1,663 @@
+commit 58f16a7228bc33f3b44a3013d726d903f477bc5c
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Fri Oct 25 21:24:26 2024 +0900
+
+    PlayerMove스크립트 수정 참고
+    
+    충돌나면 본인의 playerMove.cs를 리무브하고 깃 풀 할것
+
+commit ea39d08676d8cfeb78b60223ba3c760832ad7766
+Merge: 9ed096f 5e98ddd
+Author: Jinwoo Jeon <127280725+JiNugithub1@users.noreply.github.com>
+Date:   Thu Oct 24 16:49:22 2024 +0900
+
+    Merge pull request #15 from JiNugithub1/main
+    
+    주인공 달리Sprite + 주인공 gif(주인공 뛸때 숨쉬는 모션이랑 숨안쉬는 모션 두개다 있어요)
+
+commit 5e98ddde4a660b516a7213f35c2105247de9039b
+Author: jinwoo <jinwoo8857@gmail.com>
+Date:   Thu Oct 24 16:48:29 2024 +0900
+
+    주인공 달리Sprite + 주인공 gif
+
+commit 9ed096fa41cec0cddc0a9db5c4fd1f34a6465322
+Author: gustn6430 <65322808+gustn6430@users.noreply.github.com>
+Date:   Wed Oct 23 22:01:38 2024 +0900
+
+    캐릭터 걷기 표현
+
+commit 7d4a7068492d95df72eb701dc91ac76db27173ad
+Author: gustn6430 <65322808+gustn6430@users.noreply.github.com>
+Date:   Wed Oct 23 21:55:40 2024 +0900
+
+    캐릭터 숨쉬기 표현
+
+commit 9a44746f7be48a010049a31033e253da5b8c687c
+Author: gustn6430 <65322808+gustn6430@users.noreply.github.com>
+Date:   Wed Oct 23 21:38:54 2024 +0900
+
+    맵의 캐비넷 제거
+
+commit 5b6679c6e245392493089af1c6ba055225018f48
+Author: gustn6430 <65322808+gustn6430@users.noreply.github.com>
+Date:   Wed Oct 23 21:38:00 2024 +0900
+
+    캐비넷 오브젝트화
+
+commit 60e68e9542abe1767ec29038050faff67d57e515
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Sat Oct 19 02:55:21 2024 +0900
+
+    복도작업
+
+commit 6f2acb9ed766fcaea24b90376ef2c09d1d2094a3
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Tue Oct 15 18:38:48 2024 +0900
+
+    저장기능(90%완)메인UI
+
+commit 98594a2ead311161276200bd7bbab0fe20335439
+Author: veiboss <finalbossveigar1@gmail.com>
+Date:   Tue Oct 15 14:57:18 2024 +0900
+
+    푸시해요
+
+commit 226687725ea1d67b2abd915023ac5dbc5acbe335
+Author: veiboss <finalbossveigar1@gmail.com>
+Date:   Mon Oct 14 20:35:30 2024 +0900
+
+    Revert "Add files via upload"
+    
+    This reverts commit b757d9cc24f40aebcdef51fc2446c48c7358009a.
+
+commit 6e3c131120bce795fb75d0561d2e37247858a5f3
+Author: veiboss <finalbossveigar1@gmail.com>
+Date:   Mon Oct 14 20:35:26 2024 +0900
+
+    Revert "Add files via upload"
+    
+    This reverts commit 3dffa88a4c550cfa50746c54ac3aada8b3a986a8.
+
+commit 99b3d886bd99cad63bdfebc94d0b7a4a15e8bedf
+Author: veiboss <finalbossveigar1@gmail.com>
+Date:   Mon Oct 14 20:35:16 2024 +0900
+
+    Revert "Add files via upload"
+    
+    This reverts commit 1e152cf20624a14c6b5a91f8ef27ea91ac3d69ee.
+
+commit 1e152cf20624a14c6b5a91f8ef27ea91ac3d69ee
+Author: veiboss <64262513+veiboss@users.noreply.github.com>
+Date:   Mon Oct 14 20:20:31 2024 +0900
+
+    Add files via upload
+
+commit 3dffa88a4c550cfa50746c54ac3aada8b3a986a8
+Author: veiboss <64262513+veiboss@users.noreply.github.com>
+Date:   Mon Oct 14 20:12:18 2024 +0900
+
+    Add files via upload
+
+commit b757d9cc24f40aebcdef51fc2446c48c7358009a
+Author: veiboss <64262513+veiboss@users.noreply.github.com>
+Date:   Mon Oct 14 20:08:30 2024 +0900
+
+    Add files via upload
+
+commit 0dbc9bbe1d8881719bd3425b006ccfca63d1251b
+Author: CHP99 <duddndsla7777@gmail.com>
+Date:   Mon Oct 14 18:42:33 2024 +0900
+
+    인벤토리 작업  마무리
+
+commit eee0a341ec69fab71642bde174322fd2a6a1ba1c
+Author: CHP99 <duddndsla7777@gmail.com>
+Date:   Mon Oct 14 16:25:31 2024 +0900
+
+    개인감옥 씬 이동
+
+commit 72276031311ecc2202b33a675adfaa6ff3d38da6
+Merge: 73ec07a 7669820
+Author: Jinwoo Jeon <127280725+JiNugithub1@users.noreply.github.com>
+Date:   Thu Oct 10 19:13:40 2024 +0900
+
+    Merge pull request #14 from JiNugithub1/main
+    
+    IntroSC폴더안에 사진 있어요
+
+commit 7669820d791d005ca74f88d24f48f817a4743552
+Merge: da0451e 73ec07a
+Author: jinwoo <jinwoo8857@gmail.com>
+Date:   Thu Oct 10 19:12:24 2024 +0900
+
+    화염병 + Intro초기화면 폴더 새로 제작 IntroSC폴더에 있어요.
+
+commit da0451e88ee0d2db430bb44f1b790ff2f835862b
+Author: jinwoo <jinwoo8857@gmail.com>
+Date:   Thu Oct 10 19:11:42 2024 +0900
+
+    화염병 + Intro초기화면 폴더 새로 제작 IntroSC폴더에 있어요.
+
+commit 73ec07ab1b0a218f8281d97d3a72a3c324e94b13
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Thu Oct 10 06:29:30 2024 +0900
+
+    충돌오류로 인한 파일들 복구
+
+commit cd39c13fb5dc2888a058088b4e48d3d5a07d49a4
+Author: CHP99 <duddndsla7777@gmail.com>
+Date:   Wed Oct 9 23:50:32 2024 +0900
+
+    씬 설정 삭제
+
+commit 5dfa321dff47885c2387169cef96954cce058233
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Wed Oct 9 23:28:10 2024 +0900
+
+    oo가 인벤토리입니다
+
+commit 84ac89b5f6a3e4125e9c75acc48bbbcc97d9d6b4
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Wed Oct 9 23:11:40 2024 +0900
+
+    Reapply "reset Head1"
+    
+    This reverts commit f2dcb587b5c95377d8e14450f3df82cf9cc85866.
+
+commit fca4b3b369b7c635d7e81e00eef193992c10d683
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Wed Oct 9 23:11:31 2024 +0900
+
+    Reapply "개인감옥완성"
+    
+    This reverts commit 4b625958a902892af6a0c9b7e0dc4909931fda9e.
+
+commit eb9b52385a93c46d5d4b7a58455a07c53e690206
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Wed Oct 9 23:11:23 2024 +0900
+
+    뭐가 문제니
+
+commit 4b625958a902892af6a0c9b7e0dc4909931fda9e
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Wed Oct 9 23:06:19 2024 +0900
+
+    Revert "개인감옥완성"
+    
+    This reverts commit a6b0a9bcabff344ded6b8c2c448c922e7a15cbe0.
+
+commit f2dcb587b5c95377d8e14450f3df82cf9cc85866
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Wed Oct 9 23:04:25 2024 +0900
+
+    Revert "reset Head1"
+    
+    This reverts commit 532b39374bb578db055f2f004f0dcdc5fa9cc5b7.
+
+commit 1e1a7fe1c763f99cc5941017ee2f0582a46332a6
+Merge: 532b393 2101d6a
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Wed Oct 9 23:01:15 2024 +0900
+
+    Merge branch 'main' of https://github.com/jundolit/EscapeVertigo2
+
+commit 532b39374bb578db055f2f004f0dcdc5fa9cc5b7
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Wed Oct 9 23:00:45 2024 +0900
+
+    reset Head1
+
+commit 2101d6a2c3107f5c216f58117e9a7608872dd775
+Merge: a6b0a9b 3f744f0
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Wed Oct 9 22:16:18 2024 +0900
+
+    forcepush했습니다
+
+commit a6b0a9bcabff344ded6b8c2c448c922e7a15cbe0
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Wed Oct 9 22:06:29 2024 +0900
+
+    개인감옥완성
+
+commit 3f744f0846fc1770efb5c44d041f013c6a3a550e
+Merge: 74a6cf6 860c1a8
+Author: Jinwoo Jeon <127280725+JiNugithub1@users.noreply.github.com>
+Date:   Wed Oct 9 18:59:25 2024 +0900
+
+    Merge pull request #13 from JiNugithub1/main
+    
+    Sprite Folder, Intro Sprite, 아이콘 UI 추가했습니다. 주인공 걷는 스프라이트 같이 들어있어용
+
+commit 860c1a8c90902b4d27678ac3986c6209a5305516
+Merge: 7ccd5e0 74a6cf6
+Author: jinwoo <jinwoo8857@gmail.com>
+Date:   Wed Oct 9 18:57:49 2024 +0900
+
+    주인공, Intro, Sprite 폴더 제작, Icon&UI Update
+
+commit 7ccd5e0e8368223f48d0eaa4c1c2c605ebd468b7
+Author: jinwoo <jinwoo8857@gmail.com>
+Date:   Wed Oct 9 18:54:24 2024 +0900
+
+    주인공, Intro, Sprite 폴더 제작, Icon&UI Update
+
+commit 74a6cf65a65405ebbdca9440acd7afda7ee547ad
+Author: CHP99 <duddndsla7777@gmail.com>
+Date:   Wed Oct 9 07:32:32 2024 +0900
+
+    인벤터리 기능구현 - 갯수설정
+
+commit 05c2cdbe503d0de7cc670e9da1e33207205b6ccc
+Author: CHP99 <duddndsla7777@gmail.com>
+Date:   Wed Oct 9 07:23:40 2024 +0900
+
+    인벤터리 기능구현 - 드래그드롭 이동
+
+commit b570754077ae7c0c6bf96b2a02582b5033513fa1
+Author: CHP99 <duddndsla7777@gmail.com>
+Date:   Mon Oct 7 17:43:16 2024 +0900
+
+    씬 인벤토리 파운데이션 작업
+
+commit 4e719d70b3a626e2e774e4f33d83956b52285009
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Mon Oct 7 00:21:28 2024 +0900
+
+    말풍선 최종구현
+
+commit 95f2d9844e9030c3398778bffb46d633e0683215
+Author: gustn6430 <65322808+gustn6430@users.noreply.github.com>
+Date:   Sun Oct 6 13:20:55 2024 +0900
+
+    교도소 방 마다 철문 추가
+
+commit 60d73f1b96c5c84d1254a7e4fc99ed8025cad8fa
+Author: gustn6430 <65322808+gustn6430@users.noreply.github.com>
+Date:   Sun Oct 6 13:19:35 2024 +0900
+
+    캐릭터 숨 쉬는 애니메이션 추가
+
+commit 33a0682e4f38143966a368c25a59e78eedd2c4f1
+Author: gustn6430 <65322808+gustn6430@users.noreply.github.com>
+Date:   Sun Oct 6 13:18:51 2024 +0900
+
+    Delete Assets/Characters/간수 숨.gif
+
+commit d857753200e35566469e475c1f14a12db17892b3
+Author: gustn6430 <65322808+gustn6430@users.noreply.github.com>
+Date:   Sun Oct 6 13:18:33 2024 +0900
+
+    Delete Assets/Characters/군인 숨.gif
+
+commit 75155cd1c3877c4bb105ab9c63094466d153639b
+Author: CHP99 <duddndsla7777@gmail.com>
+Date:   Tue Oct 1 14:58:51 2024 +0900
+
+    씬 파일 조정
+
+commit a27f1c41801fbe9d10dc47ab6201e47b6efc1bb3
+Author: gustn6430 <65322808+gustn6430@users.noreply.github.com>
+Date:   Sun Sep 29 23:45:15 2024 +0900
+
+    전체적인 그림 수정
+
+commit 3a9d29d4b0d8d454be3525bc56d1a18153833d53
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Sun Sep 29 20:14:14 2024 +0900
+
+    맵 제작
+
+commit 1a701ba461f42382538e7d25a8d67324b15f5854
+Author: gustn6430 <65322808+gustn6430@users.noreply.github.com>
+Date:   Thu Sep 26 16:14:40 2024 +0900
+
+    Add files via upload
+
+commit 040038edd7d5023c406955184db0349d7580b303
+Author: gustn6430 <65322808+gustn6430@users.noreply.github.com>
+Date:   Thu Sep 26 16:13:16 2024 +0900
+
+    Delete Assets/김현수
+
+commit 82701f9363ce8b445edb195b7400443cd55f07a5
+Author: gustn6430 <65322808+gustn6430@users.noreply.github.com>
+Date:   Thu Sep 26 16:12:23 2024 +0900
+
+    Create 김현수
+
+commit 3570c674aa710828d33d260c08d7edb02722790d
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Wed Sep 11 01:08:38 2024 +0900
+
+    스태미나
+
+commit ad9d094aa28d82a174193a0ffc5fa79b253c6731
+Author: CHP99 <duddndsla7777@gmail.com>
+Date:   Wed Sep 11 00:46:26 2024 +0900
+
+     캐릭터스프라이트 수정
+
+commit 104faed6203b16bf458fb28e262048d2eabdcfa7
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Tue Sep 10 16:03:38 2024 +0900
+
+    김준성 작업실 만들기
+
+commit ebac3a2ee2d6c855656148c4b14a9fbd2cc9bea3
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Tue Sep 10 14:52:17 2024 +0900
+
+    구현중
+
+commit b7434cfa1abfa5fb2a245624a5b1d663eacee163
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Tue Sep 10 02:26:56 2024 +0900
+
+    기본 맵 셋팅
+
+commit 8c7926be9048dd274b247ad9784134b0fb12500f
+Merge: 5d61eb6 5c70937
+Author: gustn6430 <65322808+gustn6430@users.noreply.github.com>
+Date:   Mon Sep 9 22:52:12 2024 +0900
+
+    Merge branch 'jundolit:main' into main
+
+commit 5d61eb610decb109253ff688287c4dbe6971fa90
+Merge: 6978d0c e962207
+Author: gustn6430 <gustn6430@naver.com>
+Date:   Mon Sep 9 22:51:37 2024 +0900
+
+    방 수정 작업
+
+commit 5c70937cf9596817acffdfd17cd88c7041fb7797
+Author: CHP99 <duddndsla7777@gmail.com>
+Date:   Mon Sep 9 22:51:15 2024 +0900
+
+    Update 쭈인공 meta file and remove old version
+
+commit 6978d0c0e659d4dc3b61a72c786674fe0c5c3877
+Author: gustn6430 <gustn6430@naver.com>
+Date:   Mon Sep 9 22:15:39 2024 +0900
+
+    방 작업 수정
+
+commit e962207815838803f150ea72c87cc939cd4c2296
+Merge: d54c331 a6a4767
+Author: Jinwoo Jeon <127280725+JiNugithub1@users.noreply.github.com>
+Date:   Mon Sep 9 20:17:10 2024 +0900
+
+    Merge pull request #10 from JiNugithub1/main
+    
+    픽셀 수정
+
+commit a6a47673203378e0ce99c0d4cf735cd46e961f53
+Merge: 0def59b d54c331
+Author: Jinwoo Jeon <127280725+JiNugithub1@users.noreply.github.com>
+Date:   Mon Sep 9 20:16:24 2024 +0900
+
+    Merge branch 'jundolit:main' into main
+
+commit 0def59b7713e357ac1eff41338080de93f85fbfe
+Author: jinwoo <jinwoo8857@gmail.com>
+Date:   Mon Sep 9 20:15:34 2024 +0900
+
+    주인공 , first aid kit 이미지 다시 올립니다.
+
+commit a0f9f2e58eb6e63457638fd565e0374b407d63ba
+Author: jinwoo <jinwoo8857@gmail.com>
+Date:   Mon Sep 9 20:14:27 2024 +0900
+
+    주인공 , first aid kit 이미지 다시 올립니다.
+
+commit d54c331cc86a008cde416c3286f008f4f9165edc
+Author: CHP99 <duddndsla7777@gmail.com>
+Date:   Mon Sep 9 01:52:19 2024 +0900
+
+    PlayerMovement와 CameraMovement추가
+
+commit 05c2c2b7b377894499f29c5719d3162c9bc7d72d
+Author: CHP99 <duddndsla7777@gmail.com>
+Date:   Mon Sep 9 00:31:11 2024 +0900
+
+     B3 장소씬 설정 적용
+
+commit 891a4b9f660b8663015e0875099812925c1a2208
+Merge: 1212250 f994bc1
+Author: JINU developer <127280725+JiNugithub1@users.noreply.github.com>
+Date:   Sun Sep 8 23:41:37 2024 +0900
+
+    Merge pull request #9 from JiNugithub1/main
+    
+    응급처치 키트 + 주사기 버전 1, 2
+
+commit f994bc1cc45660d5b0a72f2d38df043f87589381
+Author: jinwoo <jinwoo8857@gmail.com>
+Date:   Sun Sep 8 23:40:41 2024 +0900
+
+    응급처치 키트 + 주사기 버전 1, 2
+
+commit 121225041aea3aaf9cf10c346f03373a1682bafb
+Merge: e9b1a5a 03e63d6
+Author: JINU developer <127280725+JiNugithub1@users.noreply.github.com>
+Date:   Tue Sep 3 20:44:25 2024 +0900
+
+    Merge pull request #8 from JiNugithub1/main
+    
+    몬스터 공격 및 걷기 애니메이션 임시 파일 올립니당~
+
+commit 03e63d6aa058940b873215f144dc69aace027d4a
+Merge: e0973e9 e9b1a5a
+Author: jinwoo <jinwoo8857@gmail.com>
+Date:   Tue Sep 3 20:39:43 2024 +0900
+
+    Merge branch 'main' of https://github.com/JiNugithub1/EscapeVertigo2
+
+commit e0973e9da93ab9c52db574f8879348675aff973f
+Author: jinwoo <jinwoo8857@gmail.com>
+Date:   Tue Sep 3 20:38:02 2024 +0900
+
+    Monster_walk & Monster_attack upload
+
+commit e9b1a5afc9e603979676df58a7497b70c5ac5ce7
+Merge: 48a3168 556d838
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Tue Sep 3 15:43:37 2024 +0900
+
+    Merge pull request #7 from gustn6430/master
+    
+    방 추가
+
+commit 48a3168e21e54910af79d3665039b2d577e9fc26
+Merge: 53ef110 0b849c7
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Tue Sep 3 05:16:27 2024 +0900
+
+    Merge branch 'main' of https://github.com/jundolit/EscapeVertigo2
+
+commit 53ef110276346bac590fdbab4c0fe832da1b0391
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Tue Sep 3 05:16:12 2024 +0900
+
+    머지
+
+commit 556d8388b9449724cf7c6f7d3fddcb4d51aee4c5
+Author: gustn6430 <gustn6430@naver.com>
+Date:   Mon Sep 2 14:51:50 2024 +0900
+
+    방 추가
+
+commit 6ca87413108f0eb98bfc39c3bc8756cc6dfcc0cd
+Author: gustn6430 <65322808+gustn6430@users.noreply.github.com>
+Date:   Mon Sep 2 14:36:18 2024 +0900
+
+    Add files via upload
+
+commit 154c88a2b1b7a26fadc257632031d12df160ad78
+Merge: 770d794 0b849c7
+Author: gustn6430 <gustn6430@naver.com>
+Date:   Mon Sep 2 14:32:41 2024 +0900
+
+    Merge branch 'main' of https://github.com/gustn6430/EscapeVertigo2
+
+commit 0b849c71ccbf6a155bb6e7a8a78b6f11f75565de
+Merge: ac16b56 261ac7e
+Author: JINU developer <127280725+JiNugithub1@users.noreply.github.com>
+Date:   Fri Aug 30 16:51:03 2024 +0900
+
+    Merge pull request #6 from JiNugithub1/main
+    
+    Icon and Item folder add, Item pixel image add
+
+commit 261ac7ec8abc56c543e645ca77a459b211f0f99a
+Author: jinwoo <jinwoo8857@gmail.com>
+Date:   Fri Aug 30 16:48:39 2024 +0900
+
+    Icon and Item folder add, Item pixel image add
+
+commit ac16b56f699d1446b92551dee5101afeb5cd5b18
+Merge: 2bcf966 f32668f
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Wed Aug 28 05:47:22 2024 +0900
+
+    Merge branch 'main' of https://github.com/jundolit/EscapeVertigo2
+
+commit 2bcf9661908c94cfc3ee2bfc3ef9d494a43d5aff
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Wed Aug 28 05:47:15 2024 +0900
+
+    버튼등등
+
+commit 770d794d411d7ae7002638283eb44cfb68e40594
+Merge: 3da9ac4 7485bbb
+Author: gustn6430 <gustn6430@naver.com>
+Date:   Tue Aug 27 21:13:35 2024 +0900
+
+    Merge branch 'main' of https://github.com/gustn6430/EscapeVertigo2
+
+commit 3da9ac46ea7f02e6b90b2fe8a54dcf3dd0af25e6
+Author: gustn6430 <gustn6430@naver.com>
+Date:   Tue Aug 27 21:11:27 2024 +0900
+
+    방 작업 추가
+
+commit 7485bbb914e9f3e31a25841bf920483c5e07fee1
+Merge: 15c0d51 6f5692e
+Author: gustn6430 <gustn6430@naver.com>
+Date:   Tue Aug 27 21:03:22 2024 +0900
+
+    Merge branch 'main' of https://github.com/gustn6430/EscapeVertigo2
+
+commit 15c0d5171f808714c5ab0382345b6da9ed88c765
+Author: gustn6430 <gustn6430@naver.com>
+Date:   Tue Aug 27 21:02:53 2024 +0900
+
+    방 작업 추가
+
+commit 6f5692e448650bbfe9566de688657192b2f83ee6
+Author: gustn6430 <gustn6430@naver.com>
+Date:   Tue Aug 27 20:59:01 2024 +0900
+
+    의무실,조리실,휴게실
+
+commit f32668fff97e37d94c11f6728e93d730068d640a
+Author: veiboss <64262513+veiboss@users.noreply.github.com>
+Date:   Tue Aug 27 20:26:23 2024 +0900
+
+    Add files via upload
+    
+    등장인물 제자리, 걷기, 뛰기
+
+commit 3e36399b4adad397b82c2b27e0d10a977cae303a
+Author: gustn6430 <65322808+gustn6430@users.noreply.github.com>
+Date:   Tue Aug 27 20:17:58 2024 +0900
+
+    Add files via upload
+
+commit be713bdee64475c5db032ec0cdf11f1a1cc2bdbd
+Author: gustn6430 <65322808+gustn6430@users.noreply.github.com>
+Date:   Tue Aug 27 20:16:42 2024 +0900
+
+    Add files via upload
+
+commit e60f9b139d2f20137beac272ad4e50494d4a1176
+Author: gustn6430 <65322808+gustn6430@users.noreply.github.com>
+Date:   Tue Aug 20 20:08:57 2024 +0900
+
+    Add files via upload
+
+commit 45e9446e7187da32f6a93a2d67f28c5782ad3ab3
+Merge: fac9f09 f7a4766
+Author: gustn6430 <65322808+gustn6430@users.noreply.github.com>
+Date:   Wed Aug 14 20:26:00 2024 +0900
+
+    Merge branch 'jundolit:main' into main
+
+commit f7a4766fc0ea3c48ac268f3ab5e1d548decfa129
+Author: CHP99 <duddndsla7777@gmail.com>
+Date:   Mon Aug 12 21:08:18 2024 +0900
+
+    인트로씬  제작
+
+commit ce7f4dfb39803f9e3f768b1545aaa40772284f97
+Author: veiboss <64262513+veiboss@users.noreply.github.com>
+Date:   Mon Aug 5 20:20:19 2024 +0900
+
+    주인공 파일 숨쉬기
+
+commit fac9f09e47eb758659c70b947aa50add632b2bdc
+Author: gustn6430 <65322808+gustn6430@users.noreply.github.com>
+Date:   Mon Aug 5 20:19:44 2024 +0900
+
+    Add files via upload
+
+commit 92cba45f11167ee2d650a2137e66a53d8996ba70
+Merge: 34336c1 cb464ee
+Author: JINU developer <127280725+JiNugithub1@users.noreply.github.com>
+Date:   Fri Aug 2 17:25:46 2024 +0900
+
+    Merge pull request #2 from gustn6430/main
+    
+    Add files via upload
+
+commit cb464eea8bf525930089a2a958967c97c4843693
+Author: gustn6430 <65322808+gustn6430@users.noreply.github.com>
+Date:   Fri Aug 2 17:22:43 2024 +0900
+
+    Add files via upload
+
+commit 34336c1b1ea031e6540468ff159954b8bef151c2
+Merge: 0cb75d4 2433d84
+Author: JINU developer <127280725+JiNugithub1@users.noreply.github.com>
+Date:   Fri Aug 2 17:16:14 2024 +0900
+
+    Merge pull request #1 from JiNugithub1/main
+    
+    캐릭터 폴더랑 맵 폴더 추가
+
+commit 2433d84ae5be1d72263929e68cc4cd0138e71c8e
+Author: jinwoo <jinwoo8857@gmail.com>
+Date:   Fri Aug 2 17:14:25 2024 +0900
+
+    Characters folder,Map Folder add
+
+commit 0212d163520406d79d801798d1d29b73e1d656c8
+Author: JINU developer <127280725+JiNugithub1@users.noreply.github.com>
+Date:   Fri Aug 2 16:58:29 2024 +0900
+
+    Delete Assets/Characters
+
+commit ea1ef5326f5bb3f42eb0697c7fedcfb1fed7c31b
+Author: JINU developer <127280725+JiNugithub1@users.noreply.github.com>
+Date:   Fri Aug 2 16:57:58 2024 +0900
+
+    Characters Folder
+    
+    캐릭터는 여기에다가 넣으시면 됩니다.
+
+commit 0cb75d45ade22523420384db93ef9993c8f2a89d
+Author: 준성 <65957098+jundolit@users.noreply.github.com>
+Date:   Wed Jul 31 20:48:22 2024 +0900
+
+    RE

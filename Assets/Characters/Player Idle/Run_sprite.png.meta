@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 41c81575c3391104e8bae4f19f892b6d
+guid: 1ff53b0d018f65a4bb896e5df396488f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -39,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 0
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -63,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 2
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -85,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,7 +98,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Press_E_Sprite_0
+      name: Run_sprite_0
       rect:
         serializedVersion: 2
-        x: 77
-        y: 85
-        width: 358
-        height: 334
+        x: 50
+        y: 4
+        width: 43
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9ec5be39fa13c441b1b8f2e40ef8a23
-      internalID: -2001216553
+      spriteID: 37bc429e919840d45b37a1506042b8b4
+      internalID: -1862632735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Press_E_Sprite_1
+      name: Run_sprite_1
       rect:
         serializedVersion: 2
-        x: 589
-        y: 85
-        width: 358
-        height: 334
+        x: 163
+        y: 4
+        width: 61
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d3a11dc13f29394f915b6017e0d2cbd
-      internalID: 874666861
+      spriteID: 8a2a1cd33704b424897a0dff6075adf4
+      internalID: -1929999875
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Press_E_Sprite_2
+      name: Run_sprite_2
       rect:
         serializedVersion: 2
-        x: 1101
-        y: 85
-        width: 358
-        height: 334
+        x: 274
+        y: 4
+        width: 82
+        height: 118
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8be4df89bbf3e44aaecf273ba052bf0
-      internalID: -1309021799
+      spriteID: 7471ce2d13f65b84a9debd2ac9f48cdc
+      internalID: 578128068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Press_E_Sprite_3
+      name: Run_sprite_3
       rect:
         serializedVersion: 2
-        x: 1613
-        y: 85
-        width: 358
-        height: 334
+        x: 389
+        y: 4
+        width: 108
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 879ea51fb7b8a6f4e8f5cead76b345ba
-      internalID: -249377646
+      spriteID: ffc8ae77d48709a43a4fa3a14a70e8f2
+      internalID: -176197915
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Press_E_Sprite_4
+      name: Run_sprite_4
       rect:
         serializedVersion: 2
-        x: 2125
-        y: 85
-        width: 358
-        height: 286
+        x: 530
+        y: 4
+        width: 90
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 608c967232948ea439b3f6c06bb1422b
-      internalID: 444513124
+      spriteID: 2ade4c9035572d545b4a118fd12ffe2b
+      internalID: 562635261
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Press_E_Sprite_5
+      name: Run_sprite_5
       rect:
         serializedVersion: 2
-        x: 2637
-        y: 85
-        width: 358
-        height: 286
+        x: 671
+        y: 3
+        width: 77
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80e91b4b901ef2244ae5acd1110d4ca9
-      internalID: 1470930596
+      spriteID: 09c4d6f51410ba04b85293fcc293119a
+      internalID: 13720050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Press_E_Sprite_6
+      name: Run_sprite_6
       rect:
         serializedVersion: 2
-        x: 3149
-        y: 85
-        width: 358
-        height: 286
+        x: 820
+        y: 4
+        width: 42
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cc6ad368d999c84385d4821e7a50d8d
-      internalID: 1308256874
+      spriteID: 6abc6aba02a8f6a40940099a12471127
+      internalID: 1552490511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Press_E_Sprite_7
+      name: Run_sprite_7
       rect:
         serializedVersion: 2
-        x: 3661
-        y: 85
-        width: 358
-        height: 286
+        x: 931
+        y: 4
+        width: 67
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,8 +271,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b62f9e6b4173a242ba72951ae717a1c
-      internalID: -651856533
+      spriteID: c30d8292beb9a184da70fa911c25dcbf
+      internalID: 647511391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_sprite_8
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 6
+        width: 93
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a01f30c760f63e47bd678aec4d066c3
+      internalID: 2146459581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_sprite_9
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 4
+        width: 83
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8f895012e33454793b5edb1ff77724
+      internalID: 1651182554
       vertices: []
       indices: 
       edges: []
@@ -288,14 +330,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Press_E_Sprite_0: -2001216553
-      Press_E_Sprite_1: 874666861
-      Press_E_Sprite_2: -1309021799
-      Press_E_Sprite_3: -249377646
-      Press_E_Sprite_4: 444513124
-      Press_E_Sprite_5: 1470930596
-      Press_E_Sprite_6: 1308256874
-      Press_E_Sprite_7: -651856533
+      Run_sprite_0: -1862632735
+      Run_sprite_1: -1929999875
+      Run_sprite_2: 578128068
+      Run_sprite_3: -176197915
+      Run_sprite_4: 562635261
+      Run_sprite_5: 13720050
+      Run_sprite_6: 1552490511
+      Run_sprite_7: 647511391
+      Run_sprite_8: 2146459581
+      Run_sprite_9: 1651182554
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

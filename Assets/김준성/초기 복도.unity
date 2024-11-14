@@ -497,12 +497,20 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4764141837380849115, guid: d0736dcbd6e96cf4c85725bdefad2594, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4764141837380849115, guid: d0736dcbd6e96cf4c85725bdefad2594, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4764141837380849115, guid: d0736dcbd6e96cf4c85725bdefad2594, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 24.92
       objectReference: {fileID: 0}
     - target: {fileID: 4764141837380849115, guid: d0736dcbd6e96cf4c85725bdefad2594, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.9
+      value: -1.08
       objectReference: {fileID: 0}
     - target: {fileID: 4764141837380849115, guid: d0736dcbd6e96cf4c85725bdefad2594, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2490,7 +2498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   submenu: {fileID: 639015343}
-  player: {fileID: 0}
+  player: {fileID: 112713319}
 --- !u!4 &900796879
 Transform:
   m_ObjectHideFlags: 0
@@ -2720,6 +2728,57 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.76, y: 5.76}
   m_EdgeRadius: 0
+--- !u!1 &968295865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 968295868}
+  - component: {fileID: 968295866}
+  m_Layer: 0
+  m_Name: SceneMoveLeft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &968295866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968295865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e2f7e3a98df4a4fa2412baf46ba355, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 112713319}
+  targetSceneName: MedicHall
+  currentSceneName: "\uCD08\uAE30 \uBCF5\uB3C4"
+  beforeSceneName: PersonalCell
+  targetSceneTransitionX: -106
+  currentSceneTransitionStartX: 24
+  currentSceneTransitionEndX: 30
+--- !u!4 &968295868
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968295865}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.873705, y: 13.979138, z: -0.37237287}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1094354784
 GameObject:
   m_ObjectHideFlags: 0
@@ -3164,6 +3223,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261532699}
   m_CullTransparentMesh: 1
+--- !u!95 &1350090816 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3970343068055824785, guid: d0736dcbd6e96cf4c85725bdefad2594, type: 3}
+  m_PrefabInstance: {fileID: 112713318}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1646614263
 GameObject:
   m_ObjectHideFlags: 0
@@ -3247,7 +3311,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 900796878}
         m_TargetAssemblyTypeName: SubMenuManager, Assembly-CSharp
         m_MethodName: SaveAndExitToMainUI
         m_Mode: 1
@@ -4038,7 +4102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fe7c02cda7db804690ab70a34623685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 112713319}
   smoothSpeed: 0.125
   offset: {x: 0, y: 4, z: 0}
 --- !u!114 &1939671203
@@ -4239,7 +4303,7 @@ Transform:
   m_GameObject: {fileID: 1950078498}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.88, y: -0.44, z: 0}
+  m_LocalPosition: {x: 18.89, y: -0.44, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4258,7 +4322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMove: {fileID: 112713320}
-  speed: 2
+  speed: 1.5
   warningDistance: 5
   player: {fileID: 112713319}
   soldierTypingEffect: {fileID: 1699120077}
@@ -4271,8 +4335,8 @@ MonoBehaviour:
     m_Bits: 64
   audioSource: {fileID: 1950078504}
   blinkSound: {fileID: 8300000, guid: 399d33c35cb8c72408d805404e9fa5f3, type: 3}
-  playerAnimator: {fileID: 0}
-  qustID: 0
+  playerAnimator: {fileID: 1350090816}
+  qustID: 1
 --- !u!82 &1950078504
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4603,3 +4667,4 @@ SceneRoots:
   - {fileID: 1950078502}
   - {fileID: 541816187}
   - {fileID: 900796879}
+  - {fileID: 968295868}

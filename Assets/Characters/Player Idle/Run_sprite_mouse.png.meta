@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 41c81575c3391104e8bae4f19f892b6d
+guid: eff60300614f00d4b9cd57d733843527
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -39,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 0
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -63,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 2
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -85,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,7 +98,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Press_E_Sprite_0
+      name: Run_sprite_mouse_0
       rect:
         serializedVersion: 2
-        x: 77
-        y: 85
-        width: 358
-        height: 334
+        x: 245
+        y: 17
+        width: 225
+        height: 562
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9ec5be39fa13c441b1b8f2e40ef8a23
-      internalID: -2001216553
+      spriteID: 7cf5097ea02f3db478e42d5367ec3e45
+      internalID: 25448676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Press_E_Sprite_1
+      name: Run_sprite_mouse_1
       rect:
         serializedVersion: 2
-        x: 589
-        y: 85
-        width: 358
-        height: 334
+        x: 811
+        y: 17
+        width: 312
+        height: 587
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d3a11dc13f29394f915b6017e0d2cbd
-      internalID: 874666861
+      spriteID: f7c37c39183892f4999627ffdbb5106d
+      internalID: -1089245942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Press_E_Sprite_2
+      name: Run_sprite_mouse_2
       rect:
         serializedVersion: 2
-        x: 1101
-        y: 85
-        width: 358
-        height: 334
+        x: 1367
+        y: 17
+        width: 416
+        height: 596
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8be4df89bbf3e44aaecf273ba052bf0
-      internalID: -1309021799
+      spriteID: d85e438225464bf41829cfdb76973823
+      internalID: 934105537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Press_E_Sprite_3
+      name: Run_sprite_mouse_3
       rect:
         serializedVersion: 2
-        x: 1613
-        y: 85
-        width: 358
-        height: 334
+        x: 1931
+        y: 17
+        width: 548
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 879ea51fb7b8a6f4e8f5cead76b345ba
-      internalID: -249377646
+      spriteID: 7124397b19109124ab142d305ad6fba3
+      internalID: -1397789171
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Press_E_Sprite_4
+      name: Run_sprite_mouse_4
       rect:
         serializedVersion: 2
-        x: 2125
-        y: 85
-        width: 358
-        height: 286
+        x: 2645
+        y: 17
+        width: 460
+        height: 587
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 608c967232948ea439b3f6c06bb1422b
-      internalID: 444513124
+      spriteID: 10534ed499e5c1d4f922153ca2e51b3d
+      internalID: -1439265931
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Press_E_Sprite_5
+      name: Run_sprite_mouse_5
       rect:
         serializedVersion: 2
-        x: 2637
-        y: 85
-        width: 358
-        height: 286
+        x: 3352
+        y: 17
+        width: 393
+        height: 543
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80e91b4b901ef2244ae5acd1110d4ca9
-      internalID: 1470930596
+      spriteID: ac9bea1fcbc59ad4dba466134b590e53
+      internalID: 1406285739
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Press_E_Sprite_6
+      name: Run_sprite_mouse_6
       rect:
         serializedVersion: 2
-        x: 3149
-        y: 85
-        width: 358
-        height: 286
+        x: 4095
+        y: 17
+        width: 219
+        height: 578
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cc6ad368d999c84385d4821e7a50d8d
-      internalID: 1308256874
+      spriteID: 93525aa2c07bd864289e02a5ddb303ad
+      internalID: 833632310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Press_E_Sprite_7
+      name: Run_sprite_mouse_7
       rect:
         serializedVersion: 2
-        x: 3661
-        y: 85
-        width: 358
-        height: 286
+        x: 4652
+        y: 17
+        width: 343
+        height: 587
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,8 +271,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b62f9e6b4173a242ba72951ae717a1c
-      internalID: -651856533
+      spriteID: bb557e46b72357a4cafb5c842f00073b
+      internalID: 856964298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_sprite_mouse_8
+      rect:
+        serializedVersion: 2
+        x: 5217
+        y: 17
+        width: 472
+        height: 602
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d8619548dd7a2439af28207f5cd2d0
+      internalID: 2049698516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_sprite_mouse_9
+      rect:
+        serializedVersion: 2
+        x: 5886
+        y: 17
+        width: 422
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 671504f91f2581643b536e4ad4160dd7
+      internalID: -611897219
       vertices: []
       indices: 
       edges: []
@@ -288,14 +330,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Press_E_Sprite_0: -2001216553
-      Press_E_Sprite_1: 874666861
-      Press_E_Sprite_2: -1309021799
-      Press_E_Sprite_3: -249377646
-      Press_E_Sprite_4: 444513124
-      Press_E_Sprite_5: 1470930596
-      Press_E_Sprite_6: 1308256874
-      Press_E_Sprite_7: -651856533
+      Run_sprite_mouse_0: 25448676
+      Run_sprite_mouse_1: -1089245942
+      Run_sprite_mouse_2: 934105537
+      Run_sprite_mouse_3: -1397789171
+      Run_sprite_mouse_4: -1439265931
+      Run_sprite_mouse_5: 1406285739
+      Run_sprite_mouse_6: 833632310
+      Run_sprite_mouse_7: 856964298
+      Run_sprite_mouse_8: 2049698516
+      Run_sprite_mouse_9: -611897219
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
