@@ -66,8 +66,7 @@ public class InventoryController : MonoBehaviour
             Debug.Log("Selected item is empty.");
             inventoryUI.ResetSelection();
             return;
-        }
-        
+        }       
         ItemSO item = inventoryItem.item;
         inventoryUI.UpdateDescription(itemIndex, item.ItemImage, item.name, item.Description);
     }

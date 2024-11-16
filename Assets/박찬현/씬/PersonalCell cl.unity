@@ -2274,6 +2274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryUI: {fileID: 575340245}
   inventoryData: {fileID: 11400000, guid: 67bf20b7e529bac4b969b084e59fe0e0, type: 2}
+  initialItems: []
 --- !u!1 &1533188376
 GameObject:
   m_ObjectHideFlags: 0
@@ -3843,6 +3844,14 @@ PrefabInstance:
     - target: {fileID: 2471425016507045110, guid: 6ea4b01b313e5c84b8447b696dcbf15c, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2604466267192828850, guid: 6ea4b01b313e5c84b8447b696dcbf15c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2604466267192828850, guid: 6ea4b01b313e5c84b8447b696dcbf15c, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3209597677422941560, guid: 6ea4b01b313e5c84b8447b696dcbf15c, type: 3}
       propertyPath: m_AnchorMax.y
