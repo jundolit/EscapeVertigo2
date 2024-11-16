@@ -28,6 +28,7 @@ public class UIInventoryDescription : MonoBehaviour
 
     public void SetDescription(Sprite sprite, string itemName, string itemDescription) 
     {
+        Debug.Log($"SetDescription called with Name: {itemName}, Description: {itemDescription}");
         this.itemImage.gameObject.SetActive(true);
         this.itemImage.sprite = sprite;
         this.title.text = itemName;
