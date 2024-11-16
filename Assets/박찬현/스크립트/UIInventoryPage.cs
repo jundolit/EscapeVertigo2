@@ -36,7 +36,7 @@ public class UIInventoryPage : MonoBehaviour
         itemDescription.ResetDescription();
     }
 
-    public void InitializedInventoryUI(int inventorysize)
+    public void InitializeInventoryUI(int inventorysize)
     {
         for (int i = 0; i < inventorysize; i++) 
         {
@@ -52,11 +52,18 @@ public class UIInventoryPage : MonoBehaviour
     
     }
 
-    public void UpdateData(int itemIndex, Sprite ItemImage, int ItemQuantity) 
+    internal void UpdateDescription(int itemIndex, Sprite itemImage, string name, string description)
+    {
+        itemDescription.SetDescription(itemImage, name, description);
+        DeselectAllItems();
+        listOfUIItems[itemIndex].Select();
+    }
+
+    public void UpdateData(int itemIndex, Sprite itemImage, int itemQuantity) 
     {
         if (listOfUIItems.Count > itemIndex) 
         {
-            listOfUIItems[itemIndex].SetData(ItemImage, ItemQuantity);
+            listOfUIItems[itemIndex].SetData(itemImage, itemQuantity);
         }
     }
 
@@ -91,7 +98,9 @@ public class UIInventoryPage : MonoBehaviour
     {
         int index = listOfUIItems.IndexOf(inventoryItemUI);
         if (index == -1)
+        {
             return;
+        }
         currentlyDraggedItemIndex = index;
         HandleItemSelection(inventoryItemUI);
         OnStartDragging?.Invoke(index);
@@ -105,9 +114,14 @@ public class UIInventoryPage : MonoBehaviour
 
     private void HandleItemSelection(UIInventoryItem inventoryItemUI)
     {
+        Debug.Log("HandleItemSelection called!");
         int index = listOfUIItems.IndexOf(inventoryItemUI);
         if (index == -1)
+        {
+            Debug.LogWarning("Item index not found in list.");
             return;
+        }
+        Debug.Log($"Item selected at index: {index}");
         OnSwapItems?.Invoke(currentlyDraggedItemIndex, index);
     }
 
@@ -119,7 +133,7 @@ public class UIInventoryPage : MonoBehaviour
         ResetSelection();
     }
 
-    private void ResetSelection()
+    public void ResetSelection()
     {
         itemDescription.ResetDescription();
         DeselectAllItems();
@@ -138,5 +152,5 @@ public class UIInventoryPage : MonoBehaviour
         gameObject.SetActive(false);
         ResetDraggedItem();
     }
-    
+
 }

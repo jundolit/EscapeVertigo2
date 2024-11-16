@@ -52,13 +52,15 @@ public class UIInventoryItem : MonoBehaviour, IPointerClickHandler, IBeginDragHa
     
     public void OnPointerClick(PointerEventData pointerData)
     {
-        
+        Debug.Log("OnPointerClick called!");
         if (pointerData.button == PointerEventData.InputButton.Right)
         {
+            Debug.Log("Right mouse button clicked.");
             OnRightMouseBtnClick?.Invoke(this);
         }
         else
         {
+            Debug.Log("Left mouse button clicked.");
             OnItemClicked?.Invoke(this);
         }
     }
