@@ -1,6 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using System.Collections;
 
 public class EnemyMove : MonoBehaviour
 {
@@ -16,11 +17,33 @@ public class EnemyMove : MonoBehaviour
     private bool isAttacking = false; // 공격 중인지 체크
     public int damage = 1;
 
+    [SerializeField] private AudioClip enemySound; // 적 소리 클립
+    private AudioSource audioSource;             // 오디오 소스
+
+    [Header("Game Over Settings")]
+    public Image gameOverImg; // GameOver 이미지
+    public string gameOverSceneName = "GameOver"; // 이동할 GameOver 씬 이름
+    public int blinkCount = 3; // 깜빡임 횟수
+    public float blinkDuration = 0.5f; // 깜빡임 간격
+    private bool isBlinking = false; // 깜빡임 중인지 확인
+
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        // AudioSource 초기화
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            Debug.LogError("AudioSource 컴포넌트가 필요합니다. 오브젝트에 추가하세요!");
+        }
+
+        if (gameOverImg != null)
+        {
+            gameOverImg.gameObject.SetActive(false); // GameOver 이미지를 초기 비활성화
+        }
 
         Invoke("Think", 5); // 초기 행동 패턴 설정
     }
@@ -68,20 +91,74 @@ public class EnemyMove : MonoBehaviour
             anim.SetTrigger("Attack"); // 공격 애니메이션 트리거
             anim.SetFloat("AttackSpeed", attackAnimationSpeed); // 공격 애니메이션 속도 설정
 
-            // 코루틴을 시작하여 공격 애니메이션이 완료되면 Idle로 돌아가게 함
-            StartCoroutine(AttackCoroutine());
+            // GameOver 이미지 깜빡임은 별도 처리 (애니메이션 유지)
+            if (!isBlinking)
+            {
+                isBlinking = true;
+                StartCoroutine(BlinkGameOverImage());
+            }
         }
     }
 
-    IEnumerator AttackCoroutine()
-    {
-        // 공격 애니메이션이 완료될 때까지 대기
-        yield return new WaitForSeconds(1f / attackAnimationSpeed);
 
-        // 공격이 끝나면 대기 상태로 전환
-        isAttacking = false;
-        anim.ResetTrigger("Attack"); // 공격 애니메이션 트리거 초기화
-        anim.SetInteger("WalkSpeed", 0); // idle 상태로 전환
+    private IEnumerator BlinkGameOverImage()
+    {
+        // 모든 움직임 멈추기
+        StopAllMovement();
+
+        if (gameOverImg != null)
+        {
+            for (int i = 0; i < blinkCount; i++)
+            {
+                gameOverImg.gameObject.SetActive(true); // GameOver 이미지 활성화
+                yield return new WaitForSeconds(blinkDuration);
+                gameOverImg.gameObject.SetActive(false); // GameOver 이미지 비활성화
+                yield return new WaitForSeconds(blinkDuration);
+            }
+
+            // 깜빡임 완료 후 씬 전환
+            SceneManager.LoadScene(gameOverSceneName);
+        }
+        else
+        {
+            Debug.LogError("GameOverImg가 설정되지 않았습니다.");
+        }
+    }
+
+    private void StopAllMovement()
+    {
+    
+
+        // 플레이어 움직임 멈추기
+        if (player != null)
+        {
+            Rigidbody2D playerRigidbody = player.GetComponent<Rigidbody2D>();
+            if (playerRigidbody != null)
+            {
+                playerRigidbody.velocity = Vector2.zero;
+                playerRigidbody.isKinematic = true;
+            }
+
+            PlayerMove playerMove = player.GetComponent<PlayerMove>();
+            if (playerMove != null)
+            {
+                playerMove.enabled = false;
+            }
+        }
+    }
+
+    // Animation Event에서 호출되는 함수
+    public void PlayEnemySound()
+    {
+        if (audioSource != null && enemySound != null)
+        {
+            audioSource.PlayOneShot(enemySound); // 적 소리 재생
+            Debug.Log("Enemy sound played!");
+        }
+        else if (enemySound == null)
+        {
+            Debug.LogError("Enemy sound clip이 설정되지 않았습니다!");
+        }
     }
 
     void Think()

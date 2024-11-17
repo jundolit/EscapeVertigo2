@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: "Assets/Scenes/\uAD50\uB3C4\uC18C\uBCF5\uB3C4.unity"
+    path: Assets/MR3_2004/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: "Assets/\uAE40\uC900\uC131/\uBA54\uC778UI.unity"
@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/\uAE40\uC900\uC131/\uC758\uBB34\uC2E4.unity"
     guid: 86be21fa9b32cec4385a77a484ea66f9
+  - enabled: 1
+    path: "Assets/\uAE40\uBBFC\uC6B0/\uAE30\uBBF9/\uC774\uBCA4\uD2B8\uBCF5\uB3C4.unity"
+    guid: ed1eac4669a7ea94a8780c58e2aa6ada
+  - enabled: 1
+    path: "Assets/\uAE40\uBBFC\uC6B0/\uAE30\uBBF9/\uAE30\uBBF9.unity"
+    guid: 77e5aefc938b2084ebb146d88e8426b8
   m_configObjects: {}

@@ -23,7 +23,7 @@ public class PortraitTrigger : MonoBehaviour
         // 레이캐스트를 사용하여 플레이어가 초상화 아래에 있는지 확인
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, detectionRange, LayerMask.GetMask("Player"));
 
-        if (hit.collider != null && interactionEnabled && Input.GetKeyDown(KeyCode.F))
+        if (hit.collider != null && interactionEnabled && Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log($"Player interacted with portrait {portraitIndex}");
 
@@ -31,7 +31,7 @@ public class PortraitTrigger : MonoBehaviour
             QuizGimmick quizGimmick = FindObjectOfType<QuizGimmick>();
             if (quizGimmick != null)
             {
-                quizGimmick.HandleAnswer(portraitIndex);
+                quizGimmick.InteractWithPortrait(portraitIndex); // HandleAnswer 대신 InteractWithPortrait 호출
             }
         }
     }

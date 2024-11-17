@@ -32,8 +32,8 @@ public class ObjectManager : MonoBehaviour
             }
             else if (objData != null && objData.id == 501) // ID가 501인 경우
             {
-                messageText.text = "의무실로 이동합니다.";
-                StartCoroutine(OpenDoorAndChangeScene("MedicalRoom CL"));
+                messageText.text = "문이 열렸습니다.";
+                StartCoroutine(OpenDoorAndChangeScene("기믹"));
             }
             else
             {

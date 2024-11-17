@@ -65,7 +65,7 @@ public class MedicalEvent : MonoBehaviour
 
         // 7. QustID 값 3으로 변경
         PlayerPrefs.SetInt("QustID", 3);
-        SceneManager.LoadScene("Medic Hall"); // 이동할 맵 씬으로 전환
+        SceneManager.LoadScene("MedicHall"); // 이동할 맵 씬으로 전환
 
     }
 }
