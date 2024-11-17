@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bec8c0b298f35c443b385afa28b214de, type: 3}
   m_Name: Syringe
   m_EditorClassIdentifier: 
-  <IsStackable>k__BackingField: 0
+  <IsStackable>k__BackingField: 1
   <MaxStackSize>k__BackingField: 5
   <Name>k__BackingField: "\uC54C\uC218\uC5C6\uB294 \uC8FC\uC0AC\uAE30"
   <Description>k__BackingField: "\uB0B4\uC6A9\uBB3C\uC744 \uC54C \uC218 \uC5C6\uB294

@@ -14,6 +14,7 @@ public class EnemyMove : MonoBehaviour
     private bool isChasing = false;  // 주인공 추적 여부 체크
     private bool hasLineOfSight = false; // 시야 안에 있는지 체크
     private bool isAttacking = false; // 공격 중인지 체크
+    public int damage = 1;
 
     void Awake()
     {

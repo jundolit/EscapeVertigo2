@@ -9,13 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bec8c0b298f35c443b385afa28b214de, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a08c4a0c5881704881a70e09118f0c7, type: 3}
   m_Name: FirstAidKit
   m_EditorClassIdentifier: 
-  <IsStackable>k__BackingField: 0
+  <IsStackable>k__BackingField: 1
   <MaxStackSize>k__BackingField: 5
-  <Name>k__BackingField: "\uC751\uAE09\uCC98\uCE58\uD0A4\uD2B8"
-  <Description>k__BackingField: "\uB0A1\uC740 \uC751\uAE09\uCC98\uC9C0 \uD0A4\uD2B8\uC774\uB2E4.
-    \uAC00\uBCBC\uC6B4 \uBD80\uC0C1\uC744 \uCE58\uB8CC\uD560 \uC218 \uC788\uC744\uAC83
+  <Name>k__BackingField: "\uC751\uAE09\uCC98\uC9C0\uD0A4\uD2B8"
+  <Description>k__BackingField: "\uBD80\uC0C1\uC744 \uCE58\uB8CC\uD560 \uC218 \uC788\uB294
+    \uB3C4\uAD6C\uBAA8\uC74C\uC774\uB2E4. \uAC00\uBCBC\uC6B4 \uCE58\uB8CC\uB294 \uAC00\uB2A5\uD560\uAC83
     \uAC19\uB2E4..."
-  <ItemImage>k__BackingField: {fileID: 21300000, guid: dbaebe0e4deb45745887e2aaea29e2f1, type: 3}
+  <ItemImage>k__BackingField: {fileID: 21300000, guid: 16db6a99318f7c14387445c10e407c96, type: 3}
+  modifiersData: []
