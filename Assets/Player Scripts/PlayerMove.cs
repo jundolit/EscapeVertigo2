@@ -25,6 +25,14 @@ public class PlayerMove : MonoBehaviour
     public float staminaRecoveryCooldown = 10f; // 스태미너 회복 지연 시간 (초)
     private float staminaRecoveryTimer = 0f; // 현재 회복 지연 타이머
 
+    private BoxCollider2D boxCollider;
+    private float horizontalInput;
+
+    [SerializeField] private LayerMask wallLayer;
+    [SerializeField] private LayerMask groundLayer;
+    
+    
+
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     Animator anim;
@@ -36,10 +44,15 @@ public class PlayerMove : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
     void Update()
     {
+        horizontalInput = Input.GetAxis("Horizontal");
+
+        
+
         // 방향 변경 및 애니메이션 설정
         if (Input.GetButton("Horizontal"))
         {
@@ -105,6 +118,22 @@ public class PlayerMove : MonoBehaviour
                 staminaBar.gameObject.SetActive(false); // 스태미너 바 비활성화
             }
         }
+    }
+    private bool isGrounded()
+    {
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
+        return raycastHit.collider != null;
+    }
+
+    private bool onWall()
+    {
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, new Vector2(transform.localScale.x, 0), 0.1f, wallLayer);
+        return raycastHit.collider != null;
+    }
+
+    public bool canAttack()
+    {
+        return horizontalInput == 0 && isGrounded() && !onWall();
     }
 
     void FixedUpdate()
@@ -181,4 +210,6 @@ public class PlayerMove : MonoBehaviour
             scanObject = null;
 
     }
+
+
 }
