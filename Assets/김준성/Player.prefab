@@ -187,6 +187,7 @@ MonoBehaviour:
   acceleration: 1
   runMultiplier: 2
   targetTag: Obstacle
+  objectManager: {fileID: 0}
   transitionThresholdLeft: -100
   transitionThresholdRight: 100
   stamina: 50

@@ -30,37 +30,31 @@ public class PlayerMove : MonoBehaviour
 
     [SerializeField] private LayerMask wallLayer;
     [SerializeField] private LayerMask groundLayer;
-    
-    
+
 
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     Animator anim;
     Vector3 dirVec;
     GameObject scanObject;
-
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
+
     }
 
     void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
-
-        
-
-        // 방향 변경 및 애니메이션 설정
         if (Input.GetButton("Horizontal"))
         {
             lastDirectionFlipX = Input.GetAxisRaw("Horizontal") == -1;
             spriteRenderer.flipX = lastDirectionFlipX;
-        }
+        }   
 
-        // 걷기 애니메이션 설정
+
         if (Mathf.Abs(rigid.velocity.x) > 0.01f && Mathf.Abs(rigid.velocity.x) < 5f)
         {
             lastDirectionFlipX = Input.GetAxisRaw("Horizontal") == 1;
@@ -71,8 +65,6 @@ public class PlayerMove : MonoBehaviour
         {
             anim.SetBool("isWalk", false);
         }
-
-        // 달리기 애니메이션 설정
         if (Mathf.Abs(rigid.velocity.x) >= 5f)
         {
             anim.SetBool("isRun", true);
@@ -81,12 +73,9 @@ public class PlayerMove : MonoBehaviour
         {
             anim.SetBool("isRun", false);
         }
-
-        // Idle 상태로 전환할 때 마지막 이동 방향을 유지
-        if (rigid.velocity.x == 0)
+        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("attack") && rigid.velocity.x == 0)
         {
-            anim.SetBool("isIdle", true);
-            spriteRenderer.flipX = lastDirectionFlipX; // 마지막 이동 방향을 Idle 상태에서 유지
+            anim.SetBool("isIdle", true); // Idle 상태로 전환
         }
         else
         {
@@ -103,7 +92,6 @@ public class PlayerMove : MonoBehaviour
             }
         }
 
-
         // 스태미너 바 표시 및 위치 업데이트
         if (staminaBar != null)
         {
@@ -111,7 +99,7 @@ public class PlayerMove : MonoBehaviour
             {
                 staminaBar.gameObject.SetActive(true); // 스태미너 바 활성화
                 staminaBar.transform.position = Camera.main.WorldToScreenPoint(transform.position + staminaBarOffset);
-                staminaBar.value = stamina; // 슬라이더의 값 갱신
+                staminaBar.value = stamina; // 슬라이더 값 갱신
             }
             else
             {
@@ -133,8 +121,11 @@ public class PlayerMove : MonoBehaviour
 
     public bool canAttack()
     {
-        return horizontalInput == 0 && isGrounded() && !onWall();
+        bool result = horizontalInput == 0 && isGrounded() && !onWall();
+        Debug.Log($"CanAttack Result: {result}"); // 조건 결과를 출력
+        return result;
     }
+
 
     void FixedUpdate()
     {
@@ -197,7 +188,6 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-   
     void Scan()
     {
 

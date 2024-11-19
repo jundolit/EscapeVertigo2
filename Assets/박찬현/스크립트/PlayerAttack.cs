@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    [SerializeField] private float attackCooldown;
+  [SerializeField] private float attackCooldown;
 
     private Animator anim;
     private PlayerMove PlayerMove;
@@ -20,7 +20,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
-        // Q 키를 눌렀을 때 공격
+        // 왼마우스 키를 눌렀을 때 공격
         if (Input.GetMouseButton(0) && cooldownTimer > attackCooldown && PlayerMove.canAttack())
             Attack();
 
@@ -30,8 +30,17 @@ public class PlayerAttack : MonoBehaviour
     private void Attack()
     {
         anim.SetTrigger("attack");
-        cooldownTimer = 0;
+        cooldownTimer = 2;
 
-        // 향후 fireballs 추가 구현 가능
+        // 공격 애니메이션 끝나면 트리거 리셋
+        StartCoroutine(ResetAttackTrigger());
     }
+
+    private IEnumerator ResetAttackTrigger()
+    {
+        // 애니메이션 길이만큼 대기
+        yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
+        anim.ResetTrigger("attack");
+    }
+
 }
