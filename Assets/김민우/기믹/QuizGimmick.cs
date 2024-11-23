@@ -136,6 +136,7 @@ public class QuizGimmick : MonoBehaviour
         else // 오답인 경우
         {
             Debug.Log("오답!");
+            bloodyBackground.SetActive(true);
             ActivateRunUIAndPlayFootstepSound(); // Run UI 활성화 및 발걸음 소리 재생
             Invoke(nameof(ActivateEnemy), 3f);   // 3초 후 적 활성화
         }

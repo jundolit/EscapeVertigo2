@@ -30,6 +30,7 @@ public class PlayerAttack : MonoBehaviour
     private void Attack()
     {
         anim.SetTrigger("attack");
+
         cooldownTimer = 2;
 
         // 공격 애니메이션 끝나면 트리거 리셋
